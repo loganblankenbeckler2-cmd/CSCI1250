@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab0-hello", "lab0-hello", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "lab0-hello\HelloWorld\HelloWorld.csproj", "{544D13A6-8DDC-451E-845A-D0707DDE1088}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab2-trip", "lab2-trip", "{006DFFCA-B26A-FAEA-6672-4F6B087B81B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tripcalculator", ".vscode\lab02-trip\tripcalculator\tripcalculator.csproj", "{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,18 @@ Global
 		{544D13A6-8DDC-451E-845A-D0707DDE1088}.Release|x64.Build.0 = Release|Any CPU
 		{544D13A6-8DDC-451E-845A-D0707DDE1088}.Release|x86.ActiveCfg = Release|Any CPU
 		{544D13A6-8DDC-451E-845A-D0707DDE1088}.Release|x86.Build.0 = Release|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Debug|x64.Build.0 = Debug|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Debug|x86.Build.0 = Debug|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Release|x64.ActiveCfg = Release|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Release|x64.Build.0 = Release|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Release|x86.ActiveCfg = Release|Any CPU
+		{B9BCCFD7-1B71-4E57-9750-952311DA7FF5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
