@@ -7,6 +7,7 @@
 
 Console.Write("students full name");
 
+Random rng = new Random();
 
 string fullName = Console.ReadLine();
 fullName = fullName.Trim();
@@ -39,3 +40,9 @@ System.Console.WriteLine("Name on Badge: " + nameOnbadge);
 System.Console.WriteLine("Username: " + userName);
 System.Console.WriteLine("Initials: " + intitials);
 System.Console.WriteLine("last Name Length: " + lastNamelength);
+
+int studentID = rng.Next(100000, 1000000);
+int lockerNum = rng.Next(1, 501);
+
+System.Console.WriteLine("student ID #:" + studentID);
+System.Console.WriteLine("locker #: " + lockerNum);
