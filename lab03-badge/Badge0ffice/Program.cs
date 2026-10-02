@@ -7,7 +7,7 @@
 * and the walking distance to a first class.
 */
 //---------------name,id, and locker info----------------------------------
-using System.Xml;
+
 
 Console.Write("students full name");
 
