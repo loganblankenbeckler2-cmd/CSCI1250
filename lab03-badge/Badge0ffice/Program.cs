@@ -1,9 +1,13 @@
-//var builder = WebApplication.CreateBuilder(args);
-//var app = builder.Build();
-
-//app.MapGet("/", () => "Hello World!");
-
-//app.Run();
+/*
+* Name: Logan Blankenbeckler
+* Course: CSCI 1250, Section 002
+* Assignment: Lab 03, The Badge Office
+* Date: September 30, 2026
+* Description: Builds a student badge from a name, two random assignments,
+* and the walking distance to a first class.
+*/
+//---------------name,id, and locker info----------------------------------
+using System.Xml;
 
 Console.Write("students full name");
 
@@ -36,25 +40,26 @@ int lastNamelength = lastName.Length;
 
 
 
-System.Console.WriteLine("Name on Badge: " + nameOnbadge);
-System.Console.WriteLine("Username: " + userName);
-System.Console.WriteLine("Initials: " + intitials);
-System.Console.WriteLine("last Name Length: " + lastNamelength);
+
 
 int studentID = rng.Next(100000, 1000000);
 int lockerNum = rng.Next(1, 501);
+int idChkDigit = (studentID % 9);
 
-System.Console.WriteLine("student ID #:" + studentID);
-System.Console.WriteLine("locker #: " + lockerNum);
+
 
 
 //---------------------------time to class calculations-------
 
-Console.WriteLine("all measurements are in freedom units aka "+"feet");
+//--input from student------
+Console.WriteLine("all measurements are in freedom units aka "+"\"feet\"");
+
+System.Console.WriteLine(" ");
+
 Console.WriteLine("the dorms x coordinate?");
     int dormX1= Convert.ToInt32(Console.ReadLine()) ;
 
-Console.WriteLine("the ;dorms y coordinate ?");
+Console.WriteLine("the dorms y coordinate ?");
     int dormY1= Convert.ToInt32(Console.ReadLine()) ;
 
 Console.WriteLine("the classroom x coordinate ?");
@@ -84,9 +89,48 @@ double dispMin2class = (Math.Floor(minutes2class));
 double dispSec2class = (Math.Floor(seconds2classRnd % 60));
 
 double disDist = Math.Round(dist2classRaw, 1);
+
 //---- unblock below for math trouble shooting---
 //Console.WriteLine( dispMin2class + " minutes");
 //Console.WriteLine(dispSec2class + " seconds"); 
 //Console.WriteLine(seconds2classRaw + " allseconds")     ;// checking time math
 //Console.WriteLine(dist2classRaw + " distance");// chekcing dist math
 
+
+
+//-----------configuring badge/printout---------------------
+//--student name and info print-----
+System.Console.WriteLine("Name on Badge: " + nameOnbadge);
+System.Console.WriteLine("Username: " + userName);
+System.Console.WriteLine("Initials: " + intitials);
+System.Console.WriteLine("last Name Length: " + lastNamelength );
+System.Console.WriteLine(" ");
+
+//--studend id and locker number-----
+
+System.Console.WriteLine("student ID #:" + studentID);
+System.Console.WriteLine("locker #: " + lockerNum);
+System.Console.WriteLine(" ");
+//--coordinates,distance, speed print------
+
+Console.WriteLine("dorm x : " + dormX1);
+Console.WriteLine("dorm y : " + dormY1);
+Console.WriteLine("class x : " + classX2);
+Console.WriteLine("class y :" + classY2);
+System.Console.WriteLine(" ");
+
+Console.WriteLine("Distance : " + disDist + " feet");
+Console.WriteLine("WALK".PadRight(10) + dispMin2class + " minutes " + dispSec2class + " seconds");
+System.Console.WriteLine(" ");
+
+
+
+Console.WriteLine("==================================");
+Console.WriteLine("        ETSU STUDENT BADGE        ");
+Console.WriteLine("==================================");
+Console.WriteLine("NAME".PadRight(10) + nameOnbadge);
+Console.WriteLine("USERNAME".PadRight(10) + userName);
+Console.WriteLine("ID".PadRight(10) + studentID+"-"+idChkDigit);
+Console.WriteLine("LOCKER".PadRight(10) + lockerNum);
+Console.WriteLine("WALK".PadRight(10) + dispMin2class + " min " + dispSec2class + " sec");
+Console.WriteLine("==================================");
