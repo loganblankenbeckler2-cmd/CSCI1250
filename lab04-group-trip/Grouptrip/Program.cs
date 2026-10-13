@@ -7,6 +7,15 @@
 */
 
 //-----generating prompts for user inputs-------------------
+string[] names = {"ada", "grace", "Alan", "katherine"};
+
+double[] hoursWorked = {22, 15, 30, 18};
+
+double[] payRate = { 13.50, 16.00, 11.20, 14.80};
+
+
+
+
 
 
 Console.WriteLine( "===Part 1:Road Trip===");
@@ -41,11 +50,11 @@ double gasPrice= Convert.ToDouble(Console.ReadLine()); // double can hold decima
 
 // caluclating pizza party---------------------------
 // gathering info about pizza and people
-//const int slicePerPie = 8 ; 
+const int slicePerPie = 8 ; 
 
 //Console.WriteLine( "===Part 2:Pizza Party===");
 
-//int peopleEating= Convert.ToInt32(Console.ReadLine());
+//int peopleEating= Convert.ToInt32(names.length());
 
 Console.Write("How many pizza you gonna need?");
 int pizzasNeeded= Convert.ToInt32(Console.ReadLine());
@@ -55,9 +64,9 @@ double pricePerPie= Convert.ToDouble(Console.ReadLine());
 
 // doing the math for pizza party -------------------------
 
-//int totalSlices = slicePerPie * pizzasNeeded ;
+int totalSlices = slicePerPie * pizzasNeeded ;
 
-//double slicePerPerson= totalSlices / peopleEating ;
+double slicePerPerson= totalSlices / names.Length ;
 
 double PizzaCost= pizzasNeeded * pricePerPie ; 
 
@@ -122,8 +131,12 @@ double tripTotal= fuelCost + PizzaCost;// calculating trip total with fuel cost 
 Console.WriteLine ("----part one----");
 Console.WriteLine ("pizza cost " + PizzaCost);
 Console.WriteLine ("fuel cost " + fuelCost );
+Console.WriteLine ("trip total" + tripTotal + "\n");
 
-Console.WriteLine ("trip total" + tripTotal);
+Console.WriteLine ("----part 2: The group----");
+Console.WriteLine("people going : " + names.Length);
+Console.WriteLine ("Slices each: " + (pizzasNeeded * slicePerPie) / names.Length);
+Console.WriteLine ("cost per person: " + tripTotal / names.Length + "\n");
 
 
 
@@ -137,7 +150,7 @@ static double FuelCostMeth(double milesForTheTrip, double milesPerGallon, double
 
     double fuelCost = gallonsNeeded * gasPrice; // performin calculations
 
-    return fuelCost;// value to be passed outside of method 
+    return fuelCost;// value to be passed outside of method / handing back fuel cost value
 }
 
 static double takeHomepayMeth ( double hoursWorked, double payRate, double extortionRate)// delaring method and paramters/variables used in calc
@@ -148,13 +161,13 @@ static double takeHomepayMeth ( double hoursWorked, double payRate, double extor
 
     double takeHomepay= grossPay - taxexWith ;// performing calculation
 
-    return takeHomepay; // value to be passed outside of method 
+    return takeHomepay; // value to be passed outside of method // handing back take homepay value
 
 }
 
 static double  HoursToCover ( double costPerperson, double tkHomePayperhR)// declaring method and parameter/variables to be used in calculation
 {
-    double hoursRequired= costPerperson / tkHomePayperhR ;// performing calculations
+    double hoursRequired= costPerperson / tkHomePayperhR ;// performing calculation
 
-    return hoursRequired ; // value to be passed outside of method 
+    return hoursRequired ; // value to be passed outside of method / handing back hoursRequired calculation 
 }
