@@ -14,29 +14,44 @@ Console.WriteLine("1. The grade Checker");
 Console.WriteLine("2. The Dice Table");
 Console.WriteLine("3. The Score Report");
 Console.WriteLine("4. All Three");
-Console.WriteLine("5. Quit");
+Console.WriteLine("5. Quit" + "\n");
+Console.WriteLine("choose 1 through 5");
 
+
+Random rng = new Random(4000);
 int choice = Convert.ToInt32(Console.ReadLine());
+//-----------------------------------------------------------------------------------------------------------------------
+while( choice < 1 || choice > 5)//  while : using while loop to check for proper input FIRST before continuing to to the next line of code in this case if user intput is numbers 1 through 5 (repeat if value inputed for choice is less than 1 OR greater than five). this keeps out of range value from proceeding. 
 
-if (choice == 1 || choice ==4 )
+
 {
-       //ex 1 
-Console.WriteLine("===Exercise 1 : The grade Checker ===");
-Console.WriteLine("enter score :");
-int score = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("enter a number from 1 to 5");
+choice = Convert.ToInt32(Console.ReadLine());
+}
+
+//----------------------begin menu loop (largest loop)------------
+
+if (choice == 1 || choice ==4 )// IF: using if to create separate statements so EITHER one statement can be ran OR all can be ran when choice equals 4. if " if else " was ued for subsequent statements only one statement could run at a time. 
+{
+       
+    Console.WriteLine("===Exercise 1 : The grade Checker ===");
+    Console.WriteLine("enter score :");
+    int score = Convert.ToInt32(Console.ReadLine());
     
-            // while loop will continure to write message due to logic underneath if " if score is less than zero OR over 100 " if logic is not met program will not loop and procede to if statements for grade. if statements are single pass as of right now.
-     while(score < 0 || score > 100)
+            
+     while(score < 0 || score > 100)//using while loop to check user input FISRT. if input falls out if range ( outside of 0-100) when value falls within range program will procede to next line 
     {
         Console.WriteLine("A score must be between 0 and 100");
         score = Convert.ToInt32(Console.ReadLine());
-    }
+    }   
+
+    // using if then else if statements because chain will work for this application whith logic in statements. we only need one at a time do display the letter grade a score gives 
         if (score >= 90)
         {
             Console.WriteLine(score +" is an A");
 
         }
-        else if (score < 90 && score >= 80)
+        else if (score < 90 && score >= 80)//
         {
             Console.WriteLine(score +" is a B");
         }
@@ -55,13 +70,65 @@ int score = Convert.ToInt32(Console.ReadLine());
 
     }
 
+//----------------------------------------------------------end exercise one/begin excercise 2222222222222222222-----------------------------------------
 
-
-if (choice == 2 || choice == 4 )
+if (choice == 2 || choice == 4 )// 
 {
-    //ex2
-      Console.WriteLine("b");
-}
+    int wincounter = 0;
+    int rollCounter = 0;
+    string playAgain;
+    do // using do while ( while is near bottom of statement) because we need this to run the dice game first then check if we need to proceed to the next line or loop. opposite of while statement where the check happens first then the decision to proceed is made. 
+        {// do opening
+            int diceOne = rng.Next(1, 7);
+            int diceTwo = rng.Next(1, 7);
+            Console.WriteLine("===Exercise 2 : The Dice Table===");
+            //Console.WriteLine("");
+             //Console.WriteLine("");
+    
+                 if (diceOne ==1 && diceTwo == 1)
+                    {
+                     rollCounter++;
+                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +  " snake eyes");
+                    }
+                     else if ( diceOne == diceTwo)
+                    {
+                    rollCounter++;
+                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +  " nice doubles!");
+                    }
+                     else if ( diceOne + diceTwo == 7 || diceOne + diceTwo == 11)
+                    {
+                     rollCounter++;
+                     wincounter++;
+                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +  " a winner!");
+                    }
+                    else
+                    {
+                    rollCounter++;
+                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo);
+                    }
+
+
+
+Console.WriteLine("play again? Y or N");
+    playAgain = Console.ReadLine().ToLower();
+      
+    while(playAgain != "y" && playAgain !="n")// while statement is used here to check for proper input befor proceeding ( this is not the while belonging to the above do) 
+        {
+            Console.WriteLine("Y or N please"); 
+          playAgain = (Console.ReadLine().ToLower());
+        }
+
+        
+    }  //Do closing 
+                // (while for above do) do while statement was used to evaluate input After program has ran to decide if program needs to loop. see above do 
+        while (playAgain.ToLower()== "y");
+
+Console.WriteLine(" you rolled " + rollCounter + " Times and won " + wincounter );
+
+
+}// menu if statement closing 
+
+//---------------------------------------End Exercise two/begin exercise 3333333333333333----loop-------------------------------------------------------------------  
 
 if (choice== 3 || choice ==4  )
 {
@@ -72,6 +139,5 @@ if (choice== 3 || choice ==4  )
 if (choice== 5 || choice ==4  )
 {
   //ex3    
-    Console.WriteLine("by by");
+    Console.WriteLine("goodbye");
 }
-
