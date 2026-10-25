@@ -6,8 +6,11 @@
     *Description: menu that keeps running until the user quits, offering three independent exercises or all three at once. Each exercise practices decisions and one of the four loops. 
     *
     *
- */   
+ */
 
+
+using System.Globalization;
+using System.Numerics;
 
 Console.WriteLine("===CSCI 1250 Lab 06===");
 Console.WriteLine("1. The grade Checker");
@@ -132,9 +135,50 @@ Console.WriteLine(" you rolled " + rollCounter + " Times and won " + wincounter 
 
 if (choice== 3 || choice ==4  )
 {
-  //ex3    
-    Console.WriteLine("c");
+  
+  Console.WriteLine("===Exercise 3 : the score report ") ;
+    
+ 
+  int [] scoreList = new int [5];
+  int sumScore = 0 ;
+  
+  int passCounter = 0;  
+ 
+  for (int  i = 0; i < 5; i++ )// using for loop to fill each array position with user input. for also allows us to create incremental control using i++ so we can add a value to the array each pass until the logic is met 
+    {
+        
+        Console.Write($" score {i+1} : ");
+        scoreList[i] = Convert.ToInt32(Console.ReadLine());
+    }
+
+    foreach (int score in scoreList)// using for each for so calculations and logic are applied to/with EACH item in array. values from calculations can then be stored in variable listed above the for loop in this program 
+    {
+        sumScore += score;  
+
+        if (score >= 60)
+        {
+            passCounter++;
+        } 
+    }
+
+  
+
+     double scoreAvg = (double)sumScore / scoreList.Length;
+     int highScore = scoreList.Max();
+   
+    Console.WriteLine("number of scores: " + scoreList.Length);
+    Console.WriteLine("total: " + sumScore);
+    Console.WriteLine("Average:" + scoreAvg);
+    Console.WriteLine("Highest:" + highScore);
+    Console.WriteLine("Passing:" + passCounter +  " of " + scoreList.Length);
+    
+
+
 }
+
+
+
+
 
 if (choice== 5 || choice ==4  )
 {
