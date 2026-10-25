@@ -11,7 +11,10 @@
 
 using System.Globalization;
 using System.Numerics;
-
+int choice;
+do// using do while loop so our check happens at the end allowing us to repeat the program until the condition is met ( while statement for do is at the end )
+{
+Console.WriteLine("\n");
 Console.WriteLine("===CSCI 1250 Lab 06===");
 Console.WriteLine("1. The grade Checker");
 Console.WriteLine("2. The Dice Table");
@@ -21,11 +24,19 @@ Console.WriteLine("5. Quit" + "\n");
 Console.WriteLine("choose 1 through 5");
 
 
+    
+
 Random rng = new Random(4000);
-int choice = Convert.ToInt32(Console.ReadLine());
+ choice = Convert.ToInt32(Console.ReadLine());
 //-----------------------------------------------------------------------------------------------------------------------
 while( choice < 1 || choice > 5)//  while : using while loop to check for proper input FIRST before continuing to to the next line of code in this case if user intput is numbers 1 through 5 (repeat if value inputed for choice is less than 1 OR greater than five). this keeps out of range value from proceeding. 
 
+
+
+    
+
+        
+    
 
 {
 Console.WriteLine("enter a number from 1 to 5");
@@ -91,23 +102,23 @@ if (choice == 2 || choice == 4 )//
                  if (diceOne ==1 && diceTwo == 1)
                     {
                      rollCounter++;
-                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +  " snake eyes");
+                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + diceOne+diceTwo +  ", snake eyes");
                     }
                      else if ( diceOne == diceTwo)
                     {
                     rollCounter++;
-                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +  " nice doubles!");
+                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + diceOne+diceTwo +  ", nice doubles!");
                     }
                      else if ( diceOne + diceTwo == 7 || diceOne + diceTwo == 11)
                     {
                      rollCounter++;
                      wincounter++;
-                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +  " a winner!");
+                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +",Total: " + diceOne+diceTwo +  ", a winner!");
                     }
                     else
                     {
                     rollCounter++;
-                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo);
+                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + diceOne+diceTwo);
                     }
 
 
@@ -180,8 +191,9 @@ if (choice== 3 || choice ==4  )
 
 
 
-if (choice== 5 || choice ==4  )
+if (choice== 5 )
 {
   //ex3    
     Console.WriteLine("goodbye");
 }
+    }while (choice <=4);// while statement for first do when we with the logic created here anything above 4 will end the program, and with the conditioning for "choice" this will cannot see anything above 5, meaning 5 is the only thing that shoulde break the loop. 
