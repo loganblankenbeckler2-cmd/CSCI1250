@@ -21,7 +21,7 @@ Console.WriteLine("2. The Dice Table");
 Console.WriteLine("3. The Score Report");
 Console.WriteLine("4. All Three");
 Console.WriteLine("5. Quit" + "\n");
-Console.WriteLine("choose 1 through 5");
+Console.Write("choose 1 through 5 :");
 
 
     
@@ -39,7 +39,7 @@ while( choice < 1 || choice > 5)//  while : using while loop to check for proper
     
 
 {
-Console.WriteLine("enter a number from 1 to 5");
+Console.Write("enter a number from 1 to 5 : ");
 choice = Convert.ToInt32(Console.ReadLine());
 }
 
@@ -49,7 +49,7 @@ if (choice == 1 || choice ==4 )// IF: using if to create separate statements so 
 {
        
     Console.WriteLine("===Exercise 1 : The grade Checker ===");
-    Console.WriteLine("enter score :");
+    Console.Write("enter score :");
     int score = Convert.ToInt32(Console.ReadLine());
     
             
@@ -67,19 +67,19 @@ if (choice == 1 || choice ==4 )// IF: using if to create separate statements so 
         }
         else if (score < 90 && score >= 80)//
         {
-            Console.WriteLine(score +" is a B");
+            Console.WriteLine(score +" earns a B");
         }
          else if (score < 80 && score >= 70)
         {
-            Console.WriteLine(score +" is a C");
+            Console.WriteLine(score +" earns a C");
         }
          else if (score < 70 && score >= 60)
         {
-            Console.WriteLine(score +" is a D");
+            Console.WriteLine(score +" earns a D");
         }
          else if (score < 60 && score >= 0)
         {
-            Console.WriteLine(score +" is an F");
+            Console.WriteLine(score +" earns an F");
         }
 
     }
@@ -88,47 +88,49 @@ if (choice == 1 || choice ==4 )// IF: using if to create separate statements so 
 
 if (choice == 2 || choice == 4 )// 
 {
+    Console.WriteLine("===Exercise 2 : The Dice Table===");
     int wincounter = 0;
     int rollCounter = 0;
     string playAgain;
     do // using do while ( while is near bottom of statement) because we need this to run the dice game first then check if we need to proceed to the next line or loop. opposite of while statement where the check happens first then the decision to proceed is made. 
+       
         {// do opening
             int diceOne = rng.Next(1, 7);
             int diceTwo = rng.Next(1, 7);
-            Console.WriteLine("===Exercise 2 : The Dice Table===");
+            
             //Console.WriteLine("");
              //Console.WriteLine("");
     
                  if (diceOne ==1 && diceTwo == 1)
                     {
                      rollCounter++;
-                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + diceOne+diceTwo +  ", snake eyes");
+                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + (diceOne+diceTwo) +  ", snake eyes");
                     }
                      else if ( diceOne == diceTwo)
                     {
                     rollCounter++;
-                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + diceOne+diceTwo +  ", nice doubles!");
+                     Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + (diceOne+diceTwo) +  ", doubles!");
                     }
                      else if ( diceOne + diceTwo == 7 || diceOne + diceTwo == 11)
                     {
                      rollCounter++;
                      wincounter++;
-                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +",Total: " + diceOne+diceTwo +  ", a winner!");
+                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +",Total: " + (diceOne+diceTwo) +  ", a winner!");
                     }
                     else
                     {
                     rollCounter++;
-                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + diceOne+diceTwo);
+                    Console.WriteLine("roll " + rollCounter + " : " + diceOne + " and " + diceTwo +", Total: " + (diceOne+diceTwo));
                     }
 
 
 
-Console.WriteLine("play again? Y or N");
+Console.Write("play again? Y or N: ");
     playAgain = Console.ReadLine().ToLower();
       
     while(playAgain != "y" && playAgain !="n")// while statement is used here to check for proper input befor proceeding ( this is not the while belonging to the above do) 
         {
-            Console.WriteLine("Y or N please"); 
+            Console.Write("Y or N please: "); 
           playAgain = (Console.ReadLine().ToLower());
         }
 
