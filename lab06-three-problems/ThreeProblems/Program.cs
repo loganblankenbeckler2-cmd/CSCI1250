@@ -1,6 +1,6 @@
 /*
     * name: Logan blankenbeckler 
-    *Course: csci 150, section 002
+    *Course: csci 1250, section 002
     *Assignment: Lab 06, three short problems
     *Date: 10-21-2026
     *Description: menu that keeps running until the user quits, offering three independent exercises or all three at once. Each exercise practices decisions and one of the four loops. 
@@ -12,6 +12,7 @@
 using System.Globalization;
 using System.Numerics;
 int choice;
+Random rng = new Random(4000);
 do// using do while loop so our check happens at the end allowing us to repeat the program until the condition is met ( while statement for do is at the end )
 {
 Console.WriteLine("\n");
@@ -26,7 +27,7 @@ Console.Write("choose 1 through 5 :");
 
     
 
-Random rng = new Random(4000);
+
  choice = Convert.ToInt32(Console.ReadLine());
 //-----------------------------------------------------------------------------------------------------------------------
 while( choice < 1 || choice > 5)//  while : using while loop to check for proper input FIRST before continuing to to the next line of code in this case if user intput is numbers 1 through 5 (repeat if value inputed for choice is less than 1 OR greater than five). this keeps out of range value from proceeding. 
@@ -157,12 +158,12 @@ if (choice== 3 || choice ==4  )
   
   int passCounter = 0;  
  
-  for (int  i = 0; i < 5; i++ )// using for loop to fill each array position with user input. for also allows us to create incremental control using i++ so we can add a value to the array each pass until the logic is met 
+  for (int  i = 0; i < scoreList.Length; i++ )// using for loop to fill each array position with user input. for also allows us to create incremental control using i++ so we can add a value to the array each pass until the logic is met 
     {
         
         Console.Write($" score {i+1} : ");
         scoreList[i] = Convert.ToInt32(Console.ReadLine());
-    }
+    
 
     foreach (int score in scoreList)// using for each for so calculations and logic are applied to/with EACH item in array. values from calculations can then be stored in variable listed above the for loop in this program 
     {
