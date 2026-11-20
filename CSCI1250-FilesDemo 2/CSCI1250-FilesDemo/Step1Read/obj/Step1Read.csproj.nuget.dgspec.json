@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/Step1Read/Step1Read.csproj": {}
+  },
+  "projects": {
+    "/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/Step1Read/Step1Read.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/Step1Read/Step1Read.csproj",
+        "projectName": "Step1Read",
+        "projectPath": "/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/Step1Read/Step1Read.csproj",
+        "packagesPath": "/Users/desjardinsm/.nuget/packages/",
+        "outputPath": "/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/Step1Read/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/desjardinsm/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0": {
+            "framework": "net10.0",
+            "targetAlias": "net10.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net10.0": {
+          "framework": "net10.0",
+          "targetAlias": "net10.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

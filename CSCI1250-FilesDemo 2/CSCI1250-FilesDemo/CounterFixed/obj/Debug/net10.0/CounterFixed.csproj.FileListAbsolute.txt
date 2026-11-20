@@ -1,0 +1,14 @@
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/bin/Debug/net10.0/CounterFixed
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/bin/Debug/net10.0/CounterFixed.deps.json
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/bin/Debug/net10.0/CounterFixed.runtimeconfig.json
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/bin/Debug/net10.0/CounterFixed.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/bin/Debug/net10.0/CounterFixed.pdb
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.GeneratedMSBuildEditorConfig.editorconfig
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.AssemblyInfoInputs.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.AssemblyInfo.cs
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.csproj.CoreCompileInputs.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/refint/CounterFixed.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.pdb
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/CounterFixed.genruntimeconfig.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterFixed/obj/Debug/net10.0/ref/CounterFixed.dll

@@ -1,0 +1,14 @@
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/bin/Debug/net10.0/CounterRemember
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/bin/Debug/net10.0/CounterRemember.deps.json
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/bin/Debug/net10.0/CounterRemember.runtimeconfig.json
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/bin/Debug/net10.0/CounterRemember.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/bin/Debug/net10.0/CounterRemember.pdb
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.GeneratedMSBuildEditorConfig.editorconfig
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.AssemblyInfoInputs.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.AssemblyInfo.cs
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.csproj.CoreCompileInputs.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/refint/CounterRemember.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.pdb
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/CounterRemember.genruntimeconfig.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterRemember/obj/Debug/net10.0/ref/CounterRemember.dll

@@ -1,0 +1,14 @@
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/bin/Debug/net10.0/CounterAmnesia
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/bin/Debug/net10.0/CounterAmnesia.deps.json
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/bin/Debug/net10.0/CounterAmnesia.runtimeconfig.json
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/bin/Debug/net10.0/CounterAmnesia.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/bin/Debug/net10.0/CounterAmnesia.pdb
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.GeneratedMSBuildEditorConfig.editorconfig
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.AssemblyInfoInputs.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.AssemblyInfo.cs
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.csproj.CoreCompileInputs.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/refint/CounterAmnesia.dll
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.pdb
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/CounterAmnesia.genruntimeconfig.cache
+/Users/desjardinsm/Downloads/CSCI1250-FilesDemo 2/CounterAmnesia/obj/Debug/net10.0/ref/CounterAmnesia.dll
